@@ -16,6 +16,7 @@ public class Hooks {
 	@Before
 	public void startTest(Scenario scenario) {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/mac/chromedriver");
+	
 		driver = new ChromeDriver();
 		driver.get("http://newtours.demoaut.com/");
 	}

@@ -10,30 +10,20 @@ Funcionalidade: Login
 #			| senha   | mercury  | 
 #		Então sou direcionado para a tela Sign-On
 
-	@ScenarioComum
+	@Sprint1 @RealizarLogin
 	Cenário: Realizar login
 		Dado que eu esteja na tela de login
 		Quando faço login com o usuário "mercury" e senha "mercury" 
 		Então sou autenticado com sucesso 
 		
-	#Scenario Outline	
-	@ScenarioOutline
+	@Sprint1 @ScenarioOutline
 	Esquema do Cenário: Tentativa de Login
 		Dado que eu esteja na tela de login
 		Quando faço login com o usuário "<usuario>" e senha "<senha>" 
-		Então sou direcionado para a tela Sign-On
+		Então não sou direcionado para a tela Sign-On
 		
 	Exemplos:
 		| usuario | senha  |
 		| mercury | mer    |
 		| 123434  | 34     |
 		|         | 34     |
-		
-	
-	@ScenarioDataTable
-	Cenário: Realizar login
-		Dado que eu esteja na tela de login
-		Quando faço login com:
-			| usuario | mercury  |
-			| senha   | 12345678 | 
-		Então sou direcionado para a tela Sign-On

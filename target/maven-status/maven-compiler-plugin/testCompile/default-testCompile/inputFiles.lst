@@ -1,5 +1,6 @@
-/Users/celso/devtest/eclipse-workspace/curso-cucumber/src/test/java/curso/treinamento/steps/AlugarFilmesSteps.java
-/Users/celso/devtest/eclipse-workspace/curso-cucumber/src/test/java/curso/treinamento/steps/AprenderCucumberSteps.java
-/Users/celso/devtest/eclipse-workspace/curso-cucumber/src/test/java/curso/treinamento/steps/LoginSteps.java
-/Users/celso/devtest/eclipse-workspace/curso-cucumber/src/test/java/curso/treinamento/runners/RunnerTest.java
-/Users/celso/devtest/eclipse-workspace/curso-cucumber/src/test/java/curso/treinamento/converters/DateConverter.java
+/Users/celso/devtest/eclipse-workspace/aut-template-bdd-web/src/test/java/curso/treinamento/runners/RunnerTest.java
+/Users/celso/devtest/eclipse-workspace/aut-template-bdd-web/src/test/java/curso/treinamento/setup/Hooks.java
+/Users/celso/devtest/eclipse-workspace/aut-template-bdd-web/src/test/java/curso/treinamento/utils/Helper.java
+/Users/celso/devtest/eclipse-workspace/aut-template-bdd-web/src/test/java/curso/teinamento/pages/LoginPage.java
+/Users/celso/devtest/eclipse-workspace/aut-template-bdd-web/src/test/java/curso/teinamento/pages/HomePage.java
+/Users/celso/devtest/eclipse-workspace/aut-template-bdd-web/src/test/java/curso/treinamento/steps/LoginSteps.java

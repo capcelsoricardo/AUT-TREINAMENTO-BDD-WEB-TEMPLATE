@@ -20,13 +20,20 @@ public class LoginPage {
 	@FindBy(xpath = "//input[@value='Login']")
 	private WebElement botaoSignIn;
 
+	@FindBy(linkText = "REGISTER")
+	private WebElement linkRegister;
+	
 	public boolean checkPage() { 
-		return botaoSignIn.isDisplayed();
+		return botaoSignIn.isDisplayed();		
 	}
 	
 	public void realizarLogin (String usuario, String senha){
 		campoUsuario.sendKeys(usuario);
 		campoSenha.sendKeys(senha);
 		botaoSignIn.click();
+	}
+	
+	public void clickLinkRegister() { 
+		linkRegister.click();
 	}
 }

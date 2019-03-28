@@ -1,0 +1,6 @@
+curso/treinamento/utils/Helper.class
+curso/treinamento/steps/LoginSteps.class
+curso/treinamento/runners/RunnerTest.class
+curso/treinamento/setup/Hooks.class
+curso/teinamento/pages/LoginPage.class
+curso/teinamento/pages/HomePage.class
