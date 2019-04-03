@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import curso.treinamento.utils.Helper;
+
 public class RegisterPage {
 	
 	public RegisterPage(WebDriver driver) { 
@@ -29,7 +31,7 @@ public class RegisterPage {
 	}
 	
 	public void preencherContactInformation(String firstName, String lastName, String phone, String email) {
-		campoFirstName.sendKeys(firstName);
+		Helper.preencherCampo(campoFirstName, firstName);
 	}
 	
 	public void preencherMailingInformation(String address, String addressComplement, String city, String stateProvince, String postalCode, String country) {
@@ -37,7 +39,7 @@ public class RegisterPage {
 	}
 	
 	public void preencherUserInformation(String userName, String password, String confirmPassword) {
-		campoEmail.sendKeys(userName);
+		Helper.preencherCampo(campoEmail, userName);
 	}
 	
 }

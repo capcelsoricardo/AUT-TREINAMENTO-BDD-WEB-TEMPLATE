@@ -4,25 +4,25 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.WebElement;
 
 import cucumber.api.Scenario;
+import curso.treinamento.setup.Hooks;
 
 public class Helper {
 	
-	private static WebDriver driver;
-	public Helper(WebDriver driver) {
-		PageFactory.initElements(driver, this);
-		this.driver = driver;
+	public static void preencherCampo(WebElement elemento, String valor) { 
+		elemento.sendKeys(valor);
 	}
 	
-	
-	public void screenshot(Scenario scenario) { 
-		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	public static void clicarBotao(WebElement elemento) { 
+		elemento.click();
+	}
+
+	public static void screenshot(Scenario scenario) { 
+		File file = ((TakesScreenshot) Hooks.getDriver()).getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(file, new File("target/screenshots/"+ scenario.getId() +".jpg"));
 		} catch (IOException e) {

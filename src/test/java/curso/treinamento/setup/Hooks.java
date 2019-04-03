@@ -24,8 +24,7 @@ public class Hooks {
 	@After
 	public void tearDown(Scenario scenario) {
 		
-		Helper helper = new Helper(getDriver());
-		helper.screenshot(scenario);
+		Helper.screenshot(scenario);
 		
 		driver.close();
 	}
